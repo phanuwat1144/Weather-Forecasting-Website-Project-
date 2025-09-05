@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>พยากรณ์คุณภาพอากาศในมหาวิทยาลัยศรีปทุม</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+</head>
+
+<body>
+    <div class="weather-container">
+        <aside class="sidebar">
+            <div class="icon sun"></div>
+            <h1 id="temperature">36°</h1>
+            <p id="time">Loading...</p>
+            <p>💧 Humidity <span>47</span>%</p>
+            <p>💨 Wind Speed <span>13</span> km/h</p>
+            
+        </aside>
+
+        <main class="content">
+            <h2>Sripatum University Air Quality Forecast</h2>
+            <div class="tabs">
+                <span id="today-tab" class="active">Today</span>
+                <span id="tomorrow-tab">Tomorrow</span>
+
+            </div>
+
+            <div class="forecast" id="forecast-container">
+                <!-- การ์ด Today -->
+                <div class="forecast-card" id="today-card">
+                    <div class="day">Mon</div>
+                    <div class="emoji">🌤️</div>
+                    <div class="temp">36°</div>
+                    <div class="status-light" id="pm25-status" style="width: 15px; height: 15px; border-radius: 50%; background-color: rgb(51, 184, 104);"></div>
+                </div>
+            </div>
+
+            <h3>Highlights</h3>
+            <div class="highlights">
+              <div class="highlight-card">
+                <h4>PM2.5</h4>
+                <p><span id="pm2.5">--</span> µg/m³</p>              
+              </div>
+              <div class="highlight-card">
+                <h4>PM10</h4>
+                <p><span id="pm10">--</span> µg/m³</p>              
+              </div>
+              <div class="highlight-card">
+                <h4>Ozone (O₃)</h4>
+                <p><span id="O3">--</span> ppb</p>              
+              </div>
+              <div class="highlight-card">
+                <h4>Carbon Dioxide (CO₂)</h4>
+                <p> <span id="CO">--</span> ppm</p>              
+              </div>
+              <div class="highlight-card">
+                <h4>Nitrogen Dioxide (NO₂)</h4>
+                <p><span id="NO2">--</span> ppm</p>  
+              </div>            
+              <div class="highlight-card">
+                <h4>Sulfur Dioxide (SO₂)</h4>
+                <p><span id="SO2">--</span> ppm</p>
+              </div>
+            </div>
+            
+
+        </main>
+    </div>
+
+    <script src="mainweb.js"></script>
+</body>
+</html>
