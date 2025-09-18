@@ -1,4 +1,4 @@
-# Weather-Forecasting-Website-Project-
+# ระบบทำนายคุณภาพอากาศในมหาวิทยาลัย
 ## Description
 ระบบทำนายคุณภาพอากาศในมหาวิทยาลัย พัฒนาด้วย **Node.js, Express, MongoDB, MQTT, และ WebSocket (Socket.IO)**  
 รองรับการเก็บข้อมูลจากเซ็นเซอร์จริง (PM2.5, PM10, CO, NO₂, SO₂, O₃) และดึงข้อมูลจาก API ภายนอก  
